@@ -1,0 +1,47 @@
+@import "normalize.css";
+@import "main.css";
+
+body {
+  font: normal 15px/150% Helvetica, sans-serif, Arial;
+  text-shadow: 0 1px white;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+}
+
+a, a:hover { color: #217dbb; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+#sidebar {
+  background: #fff;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 220px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 0 30px 10px;
+  border-right: 1px solid #bbb;
+  box-shadow: 0 0 20px #ccc;
+  -webkit-box-shadow: 0 0 20px #ccc;
+  -moz-box-shadow: 0 0 20px #ccc;
+  font-size: 11px;
+}
+
+#sidebar label { display: block; padding-bottom: 2px; }
+#sidebar .header { border-bottom: 1px solid #eee; padding-bottom: 2px; margin-bottom: 4px; }
+
+#container {
+  min-width: 600px; 
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  /*width: 550px;*/
+  margin: 40px 0 50px 260px;
+}
