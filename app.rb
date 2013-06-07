@@ -9,6 +9,10 @@ before do
   @data = YAML.load_file('data.yml')
 end
 
+configure :production do
+  require 'newrelic_rpm'
+end
+
 get '/css/:name.css' do |name|
   content_type 'text/css', charset: 'utf-8'
   scss name.to_sym, layout: false, views: "#{settings.root}/public/css"
