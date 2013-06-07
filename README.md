@@ -9,5 +9,7 @@
 ## Запустить
 
     git clone git@github.com:torbjon/freakotistics.git
+    cd freakotistics
     bundle install
     shotgun app.rb
+    open http://127.0.0.1:9393/
